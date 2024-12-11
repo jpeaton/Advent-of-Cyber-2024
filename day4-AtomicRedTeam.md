@@ -1,70 +1,58 @@
-# Day 4 - Atomic Red Team
+# DAY 4 - DETECTION GAPS
+### Date: December 11, 2024
 
-## Overview
-As part of the Advent of Cyber 2024 challenge, I explored detection gaps, the attack kill chain, and practical tools for understanding and simulating cyberattacks. The day's challenge provided valuable insights into blue team operations and the importance of improving detection capabilities across the kill chain.
+## Objective: 
+The 4th challenge of TryHackMe's Advent of Cyber 2024 focused on understanding detection gaps in cybersecurity and addressing them using frameworks and tools like MITRE ATT&CK and Atomic Red Team. The goal was to explore how to identify, analyze, and close detection gaps to improve an organization's defensive posture.
 
-## Key Learnings
+## TASKS AND LEARNING OUTCOMES
 
-### Detection Gaps
-Reality Check: Detecting every step in an attack kill chain is rarely possible, but gaps can be minimized.
+### Understanding Detection Gaps:
+Detection gaps are inevitable due to:
 
-#### Reasons for Gaps:
-A.) Cat-and-Mouse Game: Threat actors adapt to avoid detection, requiring constant updates to detection methods.
+A) The constant evolution of threat actor techniques (cat-and-mouse game).
 
-B.) Ambiguity in Behavior: Normal and malicious activities can overlap, complicating rule creation (e.g., international login anomalies).
+B) The thin line between normal and anomalous behavior (e.g. international logins).
 
-### Cyber Attack Kill Chain
-Cyberattacks follow a structured process, well-explained by the Unified Cyber Kill Chain.
+Key Takeaway: While perfect detection is unattainable, minimizing gaps through continuous learning and improvement is critical.
 
-#### Detection Strategy:
-Ideal: Prevent attacks early in the chain (often not feasible).
+### Cyber Attacks and the Kill Chain:
+Unified Cyber Kill Chain:
 
-Practical: Detect at multiple stages to reduce undetected threats before goal execution.
+Cyberattacks follow a structured process. Detecting and disrupting attacks across multiple stages increases the chances of success.
 
-### MITRE ATT&CK Framework
-A robust framework outlining tactics, techniques, and procedures (TTPs) used by real-world threat actors.
+Detection Strategy:
+Aim to detect early but ensure coverage throughout the entire kill chain to compensate for gaps in specific phases.
 
-Includes tools like the Navigator, enabling in-depth exploration of TTPs.
+The dream is to stop it in the first phase, but this is typically unfeasible.
 
-### Atomic Red Team
+### MITRE ATT&CK Framework:
+Overview:
+A comprehensive framework detailing tactics, techniques, and procedures (TTPs) used by real-world threat actors.
+
+Tools:
+Used the MITRE Navigator to investigate TTPs and understand their application across the kill chain.
+
+### Atomic Red Team:
+Overview:
 A library of red team test cases mapped to the MITRE ATT&CK framework.
+Helps blue teams test detection gaps and improve defenses.
 
-Enables blue teams to:
+Practical Use:
+Simulated attacks using pre-built tests, including automated execution and artifact cleanup.
 
-A.) Test detection gaps.
+### Practical Application:
+Scenario: Investigated unauthorized use of Atomic Red Team to emulate a spearphishing attack (MITRE ATT&CK T1566.001).
 
-B.) Automate red team techniques for proactive defense improvements.
+Extracted artifacts like PhishingAttachment.xlsm, a malicious payload.
 
-## Day's Scenario
-Incident: Unauthorized use of Atomic Red Team to emulate a spearphishing attack (MITRE ATT&CK T1566.001). Left test artifacts in the system.
+Mapped findings to detection rules, including identifying malicious/uncommon commands and event details in Windows Event Viewer.
 
-#### Objective: 
-Recreate the emulated attack, extract artifacts, and craft detection rules to improve defenses.
+Simulation: Ran a small ransomware simulation using PowerShell.
 
-#### Key Steps:
-Emulation: Used PowerShell and Atomic Red parameters for testing.
+## Reflection:
+This challenge highlighted the importance of understanding and addressing detection gaps in cybersecurity. By simulating attacks and analyzing their artifacts, I strengthened my ability to craft effective detection rules and apply frameworks like MITRE ATT&CK in a practical setting. The exercise reinforced the need for a proactive and dynamic approach to security.
 
-Relevant parameters: -AtomicTechnique, -TestNumbers, -Cleanup, etc.
-
-#### Artifact Analysis:
-Identified artifacts like PhishingAttachment.xlsm (malicious payload).
-
-Investigated malicious domains used to host payloads.
-
-#### Simulation: 
-Ran a test to simulate ransomware activity (e.g., BlackByte Ransomware Print Bombing).
-
-Command: Invoke-AtomicTest T1059.003 -TestNumbers 4.
-
-## Challenge
-
-### Goal: 
-Identify the appropriate atomic test for scripting interpreter techniques, execute it, and extract artifacts to craft effective detection rules.
-
-### Key Artifacts:
-Extracted artifacts from the attack simulation (e.g., Wareville_Ransomware.txt).
-
-Mapped results to MITRE ATT&CK techniques and sub-techniques for improved detection.
-
-## Reflection
-This exercise deepened my understanding of the blue team's challenges and reinforced my knowledge of leveraging frameworks and tools like MITRE ATT&CK and Atomic Red Team to enhance cybersecurity defenses.
+## Skills Developed:
+Proficiency in identifying and addressing detection gaps.
+Hands-on experience with the MITRE ATT&CK framework and Atomic Red Team.
+Enhanced ability to simulate attacks and craft detection rules.
