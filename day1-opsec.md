@@ -20,7 +20,9 @@ Countermeasure Implementation: Developing strategies to mitigate identified risk
 Engaged in a scenario-based exercise to identify and mitigate information leaks in a simulated organizational environment.
 Applied OSINT (Open Source Intelligence) techniques to assess the organization's public exposure and implemented measures to reduce the attack surface.
 
-**Reflection:** This challenge underscored the critical role of OPSEC in safeguarding organizational assets. By actively identifying and addressing potential information leaks, I enhanced my ability to anticipate and counteract adversarial actions. The hands-on approach facilitated a deeper comprehension of how theoretical OPSEC principles are applied in real-world scenarios.
+**Reflection:** 
+
+This challenge underscored the critical role of OPSEC in safeguarding organizational assets. By actively identifying and addressing potential information leaks, I enhanced my ability to anticipate and counteract adversarial actions. The hands-on approach facilitated a deeper comprehension of how theoretical OPSEC principles are applied in real-world scenarios.
 
 **Skills Developed:**
 
