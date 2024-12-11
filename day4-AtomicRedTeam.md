@@ -1,5 +1,5 @@
 # DAY 4 - DETECTION GAPS
-### Date: December 11, 2024
+Date: December 11, 2024
 
 ## Objective: 
 The 4th challenge of TryHackMe's Advent of Cyber 2024 focused on understanding detection gaps in cybersecurity and addressing them using frameworks and tools like MITRE ATT&CK and Atomic Red Team. The goal was to explore how to identify, analyze, and close detection gaps to improve an organization's defensive posture.
