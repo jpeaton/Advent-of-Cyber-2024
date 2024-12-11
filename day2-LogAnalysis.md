@@ -1,7 +1,7 @@
 # DAY 2 - LOG ANALYSIS
-Date: December 5, 2024
+**Date**: December 5, 2024
 
-### Objective: 
+**Objective**: 
 The second challenge of TryHackMe's Advent of Cyber 2024 centered on Log Analysis.
 The primary goal was to understand the significance of logs in cybersecurity, learn best practices for analyzing them, and utilize essential tools to effectively interpret log data.
 
