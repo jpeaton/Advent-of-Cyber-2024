@@ -8,8 +8,7 @@ The primary goal was to understand the significance of logs in cybersecurity, le
 ## TASKS AND LEARNING OUTCOMES
 
 ### Understanding Log Analysis:
-Importance of Logs:
-
+Importance of Logs: 
 Logs are vital records that provide insights into system activities, user behaviors, and potential security incidents.
 
 ### Best Practices:
